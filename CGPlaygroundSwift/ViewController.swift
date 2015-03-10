@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     
     var circleView : CircleButtonView?
+    var snapAnimation : UISnapBehavior?
     var animator : UIDynamicAnimator?
 
     
@@ -29,10 +30,18 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-//        let snap = UISnapBehavior(item: <#UIDynamicItem#>, snapToPoint: <#CGPoint#>)
     }
     
     func HandleTap(tapGest: UITapGestureRecognizer) {
+        let snappoint = tapGest.locationInView(self.view)
+        
+        // Remove the previous behavior.
+        if (snapAnimation != nil) {
+            self.animator!.removeBehavior(self.snapAnimation!)
+        }
+        var snap = UISnapBehavior(item: self.circleView!, snapToPoint:snappoint )
+        animator!.addBehavior(snap)
+        snapAnimation = snap
         NSLog("something")
     }
 
