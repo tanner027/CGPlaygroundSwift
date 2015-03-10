@@ -13,6 +13,7 @@
 		F769DE401AAF09CA00F39541 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F769DE3F1AAF09CA00F39541 /* Images.xcassets */; };
 		F769DE431AAF09CA00F39541 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F769DE411AAF09CA00F39541 /* LaunchScreen.xib */; };
 		F769DE4F1AAF09CA00F39541 /* CGPlaygroundSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769DE4E1AAF09CA00F39541 /* CGPlaygroundSwiftTests.swift */; };
+		F769DE591AAF0A0D00F39541 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F769DE581AAF0A0D00F39541 /* CircleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F769DE481AAF09CA00F39541 /* CGPlaygroundSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGPlaygroundSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F769DE4D1AAF09CA00F39541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F769DE4E1AAF09CA00F39541 /* CGPlaygroundSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPlaygroundSwiftTests.swift; sourceTree = "<group>"; };
+		F769DE581AAF0A0D00F39541 /* CircleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				F769DE3F1AAF09CA00F39541 /* Images.xcassets */,
 				F769DE411AAF09CA00F39541 /* LaunchScreen.xib */,
 				F769DE361AAF09CA00F39541 /* Supporting Files */,
+				F769DE581AAF0A0D00F39541 /* CircleButtonView.swift */,
 			);
 			path = CGPlaygroundSwift;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F769DE591AAF0A0D00F39541 /* CircleButtonView.swift in Sources */,
 				F769DE3B1AAF09CA00F39541 /* ViewController.swift in Sources */,
 				F769DE391AAF09CA00F39541 /* AppDelegate.swift in Sources */,
 			);

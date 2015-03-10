@@ -8,11 +8,32 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    
+    var circleView : CircleButtonView?
+    var animator : UIDynamicAnimator?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        circleView = CircleButtonView(frame: CGRectMake(20, 40, 100, 100));
+        animator  = UIDynamicAnimator(referenceView: self.view)
+        var tapGesture = UITapGestureRecognizer(target: self, action: "HandleTap:");
+        self.view.addGestureRecognizer(tapGesture)
+        self.view.addSubview(circleView!);
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+//        let snap = UISnapBehavior(item: <#UIDynamicItem#>, snapToPoint: <#CGPoint#>)
+    }
+    
+    func HandleTap(tapGest: UITapGestureRecognizer) {
+        NSLog("something")
     }
 
     override func didReceiveMemoryWarning() {
